@@ -2,6 +2,7 @@
 const mesa = document.querySelector("main") ;
 
 function actualizaContadorMovimientos() {
+   
    movimientos++;
    movimientosActualizados = movimientos;
 
