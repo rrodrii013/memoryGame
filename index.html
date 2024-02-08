@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Memory.net </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&family=Open+Sans:wght@300&family=REM:wght@600&family=Rubik+Burned&family=Sixtyfour&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+    
+    <div id="bienvenida" class="mostrar">
+        <h1>Bienvenido a MemoryGame</h1>
+            <h2 id="bienvenidaH2" >Por favor, introduce tu nombre:</h2>
+                <form for="nombre" id="form"> 
+                <input type="text" id="nombre" required>
+                <h3 id="campo-obligatorio"></h3>
+
+                <button id="btn-bienvenida">Aceptar</button>
+            </form>
+             
+    </div> 
+
+
+        <div id="presentacion">
+            <h1 id="presentacion-name"></h1> <br>
+            <h1 class= "presentacion-info"> Este es un juego de la memoria en el cual deberás encontrar <br> los emojis pares 
+            que se esconden detrás de cada carta.<br> Pero no será así de sencillo. Habrá un
+            límite de movimientos <br> el cuál tú elijirás a continuación.<br>
+            ¡A entrenar esa materia gris! 
+            </h1>
+
+            <div id="selec-mov">
+                <form action="#" onsubmit="return false;">
+                    <label for = "selec-mov-number" id="selec-mov-title">Elige a continuación el limite de movimientos</label>
+                    <select id="selec-mov-number">
+                        <option id="selec-mov-option" value="10">10</option>
+                        <option id="selec-mov-option" value="15">15</option>
+                        <option id="selec-mov-option" value="20">20</option>
+                        <option id="selec-mov-option" value="30">30</option>
+                        <option id="selec-mov-option" value="40">40</option>
+                    </select>
+                       <button id="btn-iniciar" onclick="iniciar(event)">¡A jugar!</button>
+                    
+                </form>
+
+            </div>
+      
+        
+        
+        </div>
+
+    
+    <div id="juego" class="ocultar">
+        <header class="cabecera">
+            <div class="contadores">
+                    <div class="contador-item">
+                        <h4 class="cabecera-titulo">Movimientos:</h4>
+                            <div class="cabecera-num">
+                                <span id="mov">00</span><span class="separacion">/</span><span id="mov-total"></span>
+                           
+                            </div>
+                    </div> 
+                    
+                    <div class="contador-item">
+                        <h4 class="cabecera-titulo">Tiempo:</h4>
+                         <div class="cabecera-num">
+                             <span class="minutos">00</span><span class="separacion">:</span><span class="segundos">00</span>
+                        </div>
+                    </div>  
+                
+                    
+             </div>
+                <div id="nombre-cabecera">    
+        
+                </div>
+        </header>
+       
+        <main>
+           
+            <div id="mesa" class="mesa"></div>
+       
+        </main>
+    </div>
+
+    <div id="finalizado">
+
+        <div>
+           
+    
+        </div>
+
+
+    </div>
+
+
+
+    <script lenguaje="javascript" type="text/javascript" src="/js/baraja-reparte.js"></script>
+    <script lenguaje="javascript" type="text/javascript" src="/js/descubrir-comparar.js"></script>
+    <script lenguaje="javascript" type="text/javascript" src="/js/variables-globales.js"></script>
+    <script lenguaje="javascript" type="text/javascript" src="/js/acierto-error.js"></script>
+    <script lenguaje="javascript" type="text/javascript" src="/js/cronometro.js"></script>
+    <script lenguaje="javascript" type="text/javascript" src="/js/finalizar.js"></script>
+    <script lenguaje="javascript" type="text/javascript" src="/js/reinicia-juego.js"></script>
+    <script lenguaje="javascript" type="text/javascript" src="/js/game-presentacion.js"></script>
+    <script lenguaje="javascript" type="text/javascript" src="/js/iniciar.js"></script>
+    <script lenguaje="javascript" type="text/javascript" src="/js/contador.js"></script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+body { display: flex;
+flex-direction: column;
+min-height: 50vh;
+background-color: #D9E8F5
+
+} 
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8rem 5rem;
+  
+    
+}
+
+section{
+
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto;
+    border-radius: 10%;
+    background-color: #91BED4;
+    font-family: 'Sixtyfour', sans-serif !important
+}
+
+
+#bienvenida{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #1343a3
+
+}
+
+#bienvenida h1 {
+  font-size: 8.5rem;
+  font-family: 'Honk', system-ui;
+}
+
+#bienvenida h2 {
+  font-size: 2.5rem;
+  font-family: 'Sixtyfour', sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+#nombre{ 
+  text-align: center;
+  height: 2.5rem;
+  width: 20rem;
+  font-size: 1.5rem;
+  margin: 3rem ;
+}
+
+
+#btn-bienvenida {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+  font-weight: bold;  
+  align-items: center;
+  background-color: #F26101;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  box-shadow: 4px 6px 4px 0 #8e9eab;
+  font-size: 1.5rem;
+  height: 3.8rem;
+  width: 25rem;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  }
+
+  #btn-bienvenida:hover {
+
+    background-color: #e05b03;
+    font-size: 1.65rem;
+    text-decoration: solid;
+  
+
+  }
+
+#campo-obligatorio {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #d62511;
+}
+
+#presentacion {
+  margin: auto 2rem ;
+  background-color: #91BED4;
+  border-radius: 15%;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Honk', system-ui; 
+
+
+
+}
+
+.presentacion-name{
+  font-size: 5.5rem;
+}
+
+.presentacion-info{
+  font-size: 3.5rem;
+  text-align: center;
+
+}
+
+#selec-mov{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+}
+
+
+
+#selec-mov-title  {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+
+}
+
+#selec-mov-number {
+  background-color: #D9E8F5;
+  font-size: 2rem;
+  font-family:'Trebuchet MS';
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+
+}
+
+#selec-mov-option{
+  cursor: pointer;
+  background-color: #D9E8F5;
+  color: #e05b03;
+}
+
+#btn-iniciar {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+  align-items: center;
+  background-color: #F26101;
+  color: #000000;
+  font-weight: bold;  
+  border: none;
+  cursor: pointer;
+  box-shadow: 4px 6px 4px 0 #8e9eab;
+  font-size: 1.5rem;
+  height: 3.8rem;
+  width: 25rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+#btn-iniciar:hover {
+
+  background-color: #e05b03;;
+  font-size: 1.65rem;
+  text-decoration: solid;
+
+
+}
+
+
+
+.mesa {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+    align-items: center;
+    max-width: 57rem;
+}
+
+
+
+.tarjeta_contenido{  
+    display: flex;
+    position: absolute;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #8e9eab;
+    backface-visibility: hidden; 
+    transform: rotateY(-180deg) translateZ(1px);
+    background: -webkit-linear-gradient(to right, #eef2f3, #91BED4); 
+    background: linear-gradient(to right, #eef2f3, #91BED4); 
+    box-shadow: 4px 6px 4px 0 #8e9eab;
+    height: 7.7rem;
+    width: 7.5rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 5rem;
+    border-radius: 10%
+}
+
+
+.cabecera{
+    display: flex;
+    border-radius: 0.8rem;
+    margin-left: 0.1rem;
+    background-color: #91BED4;
+    
+}
+
+.cabecera-titulo{ 
+  font-family: 'Protest Strike' !important;
+  color: #2A2A2A;
+  font-size: 3rem;
+  margin: 1rem 2rem;
+  font-family: 'Sixtyfour', sans-serif;
+  text-decoration: underline #F5280B;
+
+}
+
+.cabecera-num{ 
+  font-family: 'Honk', system-ui;
+    display: flex;
+    margin:  auto;
+    font-size: 5rem;
+    color: #F5280B;
+}
+
+
+.contadores{
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.contador-item { 
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: .5rem;
+}
+
+#nombre-cabecera {
+  font-family: 'Honk', system-ui;
+  margin:  auto 2rem auto auto;
+  align-content: center;
+  text-align: center;
+}
+
+#nombre-cabecera1{
+  font-family: 'Protest Strike';
+  text-decoration: underline #d62511;
+  color: #2A2A2A;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.nombre-cabecera {
+  font-size: 5rem;
+  margin: 0
+
+}
+
+.minutos{ 
+    box-sizing: border-box;
+    display: inline;
+}
+
+#mov-total{ 
+  box-sizing: border-box;
+  display: inline;
+}
+      
+.acertada {
+        pointer-events: none;
+       backface-visibility: hidden;
+     }
+
+.acertada .tarjeta_contenido {
+  animation: acierto 2s ease-in-out forwards
+}
+
+@keyframes acierto {
+  from {
+         transform: rotateY(-180deg) scale3d(1, 1, 1);
+          opacity: 1;
+    }
+      
+  25% {
+      transform: rotateY(-180deg) scale3d(1.1, 1.1, 1.1);
+      opacity: 1;
+    }
+      
+  to {
+      transform: rotateY(-180deg) scale3d(1, 1, 1);
+       opacity: 0.4;
+        }
+ }
+      
+
+
+ @keyframes sigueBuscando {
+  10%,
+  90% {
+    transform: rotateY(-180deg) translateX(-1px);
+  }
+  20%,
+  80% {
+    transform: rotateY(-180deg) translateX(2px);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotateY(-180deg) translateX(-4px);
+  }
+  40%,
+  60% {
+    transform: rotateY(-180deg) translateX(4px);
+  }
+}
+
+  
+.sigueBuscando {
+    animation: sigueBuscando 0.9s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+  
+
+  .tarjeta { display: flex;
+    position: relative;
+    cursor: pointer;
+    flex-wrap: wrap;
+    background: #2A2A2A; 
+    box-shadow: 4px 6px 4px 0 #8e9eab;
+    height: 7.7rem;
+    width: 7.5rem;
+    border-radius: 10%;
+    margin: 1rem 1rem ;
+    transition: 1.2s ;
+    transform-style: preserve-3d;
+
+}
+  
+  
+
+  
+  .tarjeta.descubierta {
+    transform: rotateY(-180deg);
+    transition: 1.2s;
+  }
+
+  .acertada .tarjeta_contenido {
+    animation-name: acierto ;
+  }
+
+  .tarjeta_contenido::selection {
+    background: transparent;
+  }
+
+  
+  
+
+
+#limite_mov{
+  font-family: 'Protest Strike';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem 3rem; 
+
+  }
+
+ 
+  .limite {
+  text-align: center;
+  font-size: 3.5rem;
+  margin: 2rem 1.5rem;
+  }
+
+  
+  .button_limite {
+    margin: 2.5rem auto auto ;
+    background-color: #F26101;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    box-shadow: 4px 6px 4px 0 #325069;
+    font-size: 2rem;
+    height: 5rem;
+    width: 24rem;
+    border-radius: 1rem;
+
+    font-weight: bold;  
+  }
+
+  .button_limite:hover {
+    background-color: #e05b03;
+    font-size: 2.1rem;
+    text-decoration: solid;
+  }
+
+  .ocultar {
+    display: none;
+  }
+
+  .mostrar {
+    display: block;
+  }
+
+#finalizado {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #91BED4;
+  border-radius: 15%;
+  margin: 7rem 5rem;
+}
+
+#finalizado-felicidades {
+  font-family: 'Honk', system-ui;
+  font-size: 7rem;
+}
+
+#finalizado-datos {
+  font-family: 'Protest Strike';
+  font-size: 4rem;
+}
+
+#volver-a-jugar {
+  margin: 2rem auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+  font-weight: bold;  
+  align-items: center;
+  background-color: #F26101;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  box-shadow: 4px 6px 4px 0 #8e9eab;
+  font-size: 1.5rem;
+  height: 3.8rem;
+  width: 25rem;
+  border-radius: 1rem;
+  }
+
+  #volver-a-jugar:hover {
+
+    background-color: #e05b03;
+    font-size: 1.65rem;
+    text-decoration: solid;
+  
+
+  }
+
+
+  
