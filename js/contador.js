@@ -43,8 +43,6 @@ function actualizaContadorMovimientos() {
          //juego.classList.add("ocultar");
  
      }
-         
-      
    
    }
 } 

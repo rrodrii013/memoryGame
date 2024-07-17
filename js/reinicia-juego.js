@@ -6,7 +6,7 @@ function reiniciarJuego() {
   movimientosActualizados = "00";
 
   //Agregamos el valor a #mov
-  document.getElementById("mov").textContent = movimientosActualizados;
+  document.getElementById("mov").value = movimientosActualizados;
 
 
     //Al darle a aceptar el tiempo vuelve a cero

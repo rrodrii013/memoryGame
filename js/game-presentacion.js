@@ -17,7 +17,7 @@ function gamePresentacion(prevenir) {
         document.getElementById("campo-obligatorio").innerHTML = "*Este campo es obligatorio";
         return;
         
-        //No sale de la funcion hasta que campo tenga algo escrito
+        // sale de la función 
     }
 
     /* El formulario está haciendo una acción por defecto de 
